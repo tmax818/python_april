@@ -2,7 +2,7 @@
 
 ## Python Fundamentals (Day 1)
 
-### Syntax
+### [Syntax](./index.html#syntax)
 - Indentation
 - Block of code
 ### Data and Composite Types

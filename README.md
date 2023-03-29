@@ -2,13 +2,16 @@
 
 ## Python Fundamentals (Day 1)
 
-### [Syntax](./index.html#syntax)
+### [Syntax](https://www.tylermaxwell.co/python_april/lectures/day01#syntax)
 - Indentation
 - Block of code
-### Data and Composite Types
+### Data Types
+#### Primative  
 - Integers
 - Strings
 - Booleans
+- `None`
+#### Composite
 - Lists
 - Dictionaries
 - Tuples

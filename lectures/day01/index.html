@@ -43,30 +43,528 @@
       
       <section id="objective">
         <h2>Topics and Objectives</h2>
-        <p class="fragment">Python Syntax</p>
-        <p class="fragment">Data Types</p>
-        <p class="fragment">Conditionals</p>
-        <p class="fragment">Loops</p>
+        <p class="fragment"><a href="#syntax">Python Syntax</a></p>
+        <p class="fragment"><a href="#datatypes">Data Types</a></p>
+        <p class="fragment"><a href="#conditionals">Conditionals</a></p>
+        <p class="fragment"><a href="#loops">Loops</a></p>
         <p class="fragment">Functions</p>
       </section>
 
-
       <section id="syntax">
-        <h1>Python Syntax</h1>
-        <section id="indentation">
-          <h1 class="fragment">Indentation</h1>
+          <h2>Python Syntax</h2>
+          <section data-auto-animate> 
+            <h2 data-id="code-title">indentation and code blocks</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+            def funct_name(params):
+              # anything indented on the same level is
+            </code></pre>
+          </section>
+          <section data-auto-animate> 
+            <h2 data-id="code-title">indentation and code blocks</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+            def funct_name(params):
+              # anything indented on the same level is
+              # part of the block
+            </code></pre>
+          </section>
+          <section data-auto-animate> 
+            <h2 data-id="code-title">indentation and code blocks</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+            def funct_name(params):
+              # anything indented on the same level is
+              # part of the block
+              print("inside function block")
+            </code></pre>
+          </section>
+          <section data-auto-animate> 
+            <h2 data-id="code-title">indentation and code blocks</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+            def funct_name(params):
+              # anything indented on the same level is
+              # part of the block
+              print("inside function block")
+            print("outside function block")
+            </code></pre>
+          </section>
+          <section>
+            <p class="fragment grow">A colon (:) and indentation on the next line signify a code block</p>
+          </section>
+          <section data-auto-animate> 
+            <h2 data-id="code-title">indentation and code blocks</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+            while True:
+              # anything indented on the same level is
+              # part of this while loop
+              print("inside while loop")
+
+            </code></pre>
+          </section>
+          <section data-auto-animate> 
+            <h2 data-id="code-title">indentation and code blocks</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+            while True:
+              # anything indented on the same level is
+              # part of this while loop
+              print("inside while loop")
+            print("outside while loop")
+            </code></pre>
+          </section>
+
+      </section>
+
+      <section id="datatypes">
+        <section>
+          <h2>Data Types</h2>
+          <p class="fragment">primitive</p>
+          <p class="fragment">composite</p>
+          </section>
+          
+          <section>
+          <h2>Data Types</h2>
+          <p class="fragment">Why worry about the type of our data?</p>
+          <img class="fragment" src="./../../images/lockers.jpg" height="400px">
+          </section>
+          
+          
+          
+          <section id="primative">
+          <h2>Primitive</h2>
+          <p class="fragment">Numbers</p>
+          <p class="fragment">Booleans</p>
+          <p class="fragment">None</p>
+          <p class="fragment">Strings</p>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">integers</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          int_number = 42
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">floats</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          int_number = 42
+          float_number = 3.14
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">booleans</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          is_logged_in = True
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">booleans</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          is_logged_in = False
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title"><code>None</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          checking_balance = None
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title"><code>None</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          checking_balance = 0
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">strings</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          name = "Jenny"
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">strings</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          name = "Jenny"
+          phone = "867-5309"
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">strings</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          name = "Jenny"
+          phone = "867-5309"
+          f"{name}, I got your number: {phone}."
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">strings</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          name = "Jenny"
+          phone = "867-5309"
+          f"{name}, I got your number: {phone}."
+          #=> Jenny, I got your number: 867-5309.
+          </code></pre>
+          </section>
+          
+          <section id="composite">
+          <h2>Composite</h2>
+          <p class="fragment">lists</p>
+          <p class="fragment">dictionaries</p>
+          <p class="fragment">tuples</p>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">List</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          fruits = ['apple', 'banana', 'strawberry']
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">List</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          fruits = ['apple', 'banana', 'strawberry']
+          fruits[2] = 'blueberry'
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">List</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          fruits = ['apple', 'banana', 'strawberry']
+          fruits[2] = 'blueberry'
+          print(fruits)
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">List</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          fruits = ['apple', 'banana', 'strawberry']
+          fruits[2] = 'blueberry'
+          print(fruits)
+          #=> ['apple', 'banana', 'blueberry']
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries vs Lists</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries vs Lists</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          person_list[0]
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          person_list[0]
+          # => 'Tyler'
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          person_list[0]
+          # => 'Tyler'
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          person_dict['name']
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          person_list[0]
+          # => 'Tyler'
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          person_dict['name']
+          # => 'Tyler'
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_list = ['Tyler', 39, True]
+          person_list[0]
+          # => 'Tyler'
+          person_dict = {0: 'Tyler', 1: 39, 2: True}
+          person_dict[0]
+          # => 'Tyler'
+          </code></pre>
+          </section>
+
+
+      </section>
+
+      <section id="conditionals">
+        <section>
+          <h2>Conditionals</h2>
+          <p class="fragment">if</p>
+          <p class="fragment">elif</p>
+          <p class="fragment">else</p>
         </section>
-        <section id="codeblock">
-          <h1>Code Blocks</h1>
+        <section data-auto-animate>
+          <p class="fragment">if a condition is true (truthy), execute the code within the code block</p>
+          <h2 data-id="code-title">if</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = True
+            if condition:
+            print("the condition is met!")
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <h2 data-id="code-title">if</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = True
+            if condition:
+            print("the condition is met!")
+            # the condition is met!
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <p class="fragment">if a condition is false (falsey), execute the code within the else code block</p>
+          <h2 data-id="code-title">if/else</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = False
+            if condition:
+              print("the condition is met!")
+            else:
+              print("the condition is NOT met!")
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <h2 data-id="code-title">if/else</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = False
+            if condition:
+              print("the condition is met!")
+            else:
+              print("the condition is NOT met!")
+            # the condition is NOT met!
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">Remember the code blocks!</p>
+          <h2 data-id="code-title">code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = True
+            if condition:
+              print("the condition is met!")
+            else:
+              print("the condition is NOT met!")
+            print("This is outside the code block!!!")
+          </code></pre>
+
+        </section>
+        <section data-auto-animate>
+          <h2 data-id="code-title">code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = True
+            if condition:
+              print("the condition is met!")
+            else:
+              print("the condition is NOT met!")
+            print("This is outside the code block!!!")
+            # the condition is met!
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <h2 data-id="code-title">code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = True
+            if condition:
+              print("the condition is met!")
+            else:
+              print("the condition is NOT met!")
+            print("This is outside the code block!!!")
+            # the condition is met!
+            # This is outside the code block!!!
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <p class="fragment">elif is for testing multiple conditions</p>
+          <h2 data-id="code-title">elif</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = False
+            if condition:
+              print("the condition is met!")
+            else:
+              print("the condition is NOT met!")
+            print("This is outside the code block!!!")
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <h2 data-id="code-title">elif</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = False
+            conditionTwo = True
+            if condition:
+              print("the condition is met!")
+            elif conditionTwo:
+              print("the second condition is met!")
+            else:
+              print("the condition is NOT met!")
+            print("This is outside the code block!!!")
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <h2 data-id="code-title">elif</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            condition = False
+            conditionTwo = True
+            if condition:
+              print("the condition is met!")
+            elif conditionTwo:
+              print("the second condition is met!")
+            else:
+              print("the condition is NOT met!")
+            print("This is outside the code block!!!")
+            # the second condition is met!
+            # This is outside the code block!!!
+          </code></pre>
         </section>
       </section>
 
+      <section id="loops">
+        <section>
+          <h2>loops</h2>
+        </section>
+          <section data-auto-animate>
+            <p class="fragment">use <code>for</code> to do something a certain number of times</p>
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              for i in range(100):
+                print("print 100 times")
+            </code></pre>
+          </section>
 
-    </div>
+          <section data-auto-animate>
+            <p class="fragement"><code>i</code> is the variable of iteration</p>
+            <p class="fragement"><code>i</code> can be used inside the loop</p>
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              for i in range(100):
+              print(i, "print 100 times")
+            </code></pre>
+          </section>
+
+          <section data-auto-animate>
+            <p class="fragement"><code>start</code> is a variable that indicates where to start looping</p>
+            <p class="fragement"><code>start</code> is a variable that indicates where to stop looping</p>
+            <p class="fragement"><code>step</code> is a variable that indicates how to increment</p>
+
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              start = 1
+              stop = 11
+              step = 2
+            </code></pre>
+          </section>
+
+          <section data-auto-animate>
+            <p class="fragement">what will print if we run this code?</p>
+
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              start = 1
+              stop = 11
+              step = 2
+              for i in range(start, stop, step):
+              print(i)
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              start = 1
+              stop = 11
+              step = 2
+              for i in range(start, stop, step):
+                print(i)
+              1
+              3
+              5
+              7
+              9
+            </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+            <p class="fragment">use <code>for</code> to loop through a data structure</p>
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              people = ["John", "Eric", "Monty"]
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <p class="fragment">use <code>for</code> to loop through a data structure</p>
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              people = ["John", "Eric", "Monty"]
+              for person in people:
+                print(person)
+            </code></pre>
+          </section>
+          <section data-auto-animate>
+            <p class="fragment">use <code>for</code> to loop through a data structure</p>
+            <h2 data-id="code-title">for</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              people = ["John", "Eric", "Monty"]
+              for person in people:
+                print(person)
+              # John
+              # Eric
+              # Monty
+            </code></pre>
+          </section>
+
+      </section>
+
+
+
+    
+    
+    
+    
+    
+    
+    
   </div>
-  <script src="./../../dist/reveal.js"></script>
-  <script src="./../../plugin/zoom/zoom.js"></script>
-  <script src="./../../plugin/notes/notes.js"></script>
+</div>
+<script src="./../../dist/reveal.js"></script>
+<script src="./../../plugin/zoom/zoom.js"></script>
+<script src="./../../plugin/notes/notes.js"></script>
   <script src="./../../plugin/search/search.js"></script>
   <script src="./../../plugin/markdown/markdown.js"></script>
   <script src="./../../plugin/highlight/highlight.js"></script>

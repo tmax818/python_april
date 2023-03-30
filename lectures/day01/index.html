@@ -48,7 +48,7 @@
         <p class="fragment"><a href="#datatypes">Data Types</a></p>
         <p class="fragment"><a href="#conditionals">Conditionals</a></p>
         <p class="fragment"><a href="#loops">Loops</a></p>
-        <p class="fragment">Functions</p>
+        <p class="fragment"><a href="#functions">Functions</a></p>
       </section>
 
       <section id="syntax">
@@ -327,12 +327,77 @@
           <h2 data-id="code-title">Lists of Dictionaries</h2>
           <pre data-id="code-animation"><code class="hljs" data-trim>
             person_list = [
-            {'name': 'Tyler', 'age': 39, 'is_admin': True},
+            {'name': 'Joan', 'age': 21, 'is_admin': True},
+            {'name': 'Gary', 'age': 25, 'is_admin': False},
+            {'name': 'Malo', 'age': 21, 'is_admin': True}
             ]
             person_list[0]
           </code></pre>
           </section>
 
+          <section data-auto-animate>
+          <h2 data-id="code-title">Lists of Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            person_list = [
+            {'name': 'Joan', 'age': 21, 'is_admin': True},
+            {'name': 'Gary', 'age': 25, 'is_admin': False},
+            {'name': 'Malo', 'age': 21, 'is_admin': True}
+            ]
+            person_list[0]
+            # {'name': 'Joan', 'age': 21, 'is_admin': True}
+          </code></pre>
+          </section>
+
+          <section data-auto-animate>
+          <h2 data-id="code-title">Lists of Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            person_list = [
+            {'name': 'Joan', 'age': 21, 'is_admin': True},
+            {'name': 'Gary', 'age': 25, 'is_admin': False},
+            {'name': 'Malo', 'age': 21, 'is_admin': True}
+            ]
+            person_list[0]['name']
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+            <h2 data-id="code-title">Lists of Dictionaries</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              person_list = [
+              {'name': 'Joan', 'age': 21, 'is_admin': True},
+              {'name': 'Gary', 'age': 25, 'is_admin': False},
+              {'name': 'Malo', 'age': 21, 'is_admin': True}
+              ]
+              person_list[0]['name']
+              # Joan
+            </code></pre>
+          </section>
+          
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Lists of Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            person_list = [
+            {'name': 'Joan', 'age': 21, 'is_admin': True},
+            {'name': 'Gary', 'age': 25, 'is_admin': False},
+            {'name': 'Malo', 'age': 21, 'is_admin': True}
+            ]
+            person_list[2]['name']
+          </code></pre>
+          </section>
+          
+          <section data-auto-animate>
+          <h2 data-id="code-title">Lists of Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            person_list = [
+            {'name': 'Joan', 'age': 21, 'is_admin': True},
+            {'name': 'Gary', 'age': 25, 'is_admin': False},
+            {'name': 'Malo', 'age': 21, 'is_admin': True}
+            ]
+            person_list[2]['name']
+            # Malo
+          </code></pre>
+          </section>
 
       </section>
 
@@ -562,8 +627,295 @@
 
       </section>
 
+      <section id="functions">
+        <section>
+          <h2>Functions</h2>
+          <p class="fragment">named block of code that we can execute to perform a specific task.</p>
+          <p class="fragment"><code>def</code></p>
+        </section>
 
+        <section data-auto-animate>
+          <p class="fragment">use <code>def</code> keyword to create a function</p>
+          <p class="fragment">use <code>()</code> for function parameters </p>
+          <p class="fragment">use <code>:</code> to establish a code block </p>
+          <h2 data-id="code-title">function template</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def function_name():
+              pass
+          </code></pre>
+        </section>
+        <section data-auto-animate>
+          <p class="fragment">use <code>()</code> for function parameters </p>
+          <h2 data-id="code-title">function template</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def function_name(parameter(s)):
+              pass
+          </code></pre>
+        </section>
 
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def my_funct():
+              print("I am a function with no parameters!!")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def my_funct():
+              print("I am a function with no parameters!!")
+            my_funct()
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a functions gotta funct!!!!</p>
+          <h2 data-id="code-title">function example</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def my_funct():
+              print("I am a function with no parameters!!")
+            my_funct()
+            # I am a function with no parameters!!
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def my_funct(param):
+              print(param)
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a functions gotta funct!!!!</p>
+          <h2 data-id="code-title">function example with parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def my_funct(param):
+              print(param)
+            my_funct("my argument")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a functions gotta funct!!!!</p>
+          <h2 data-id="code-title">function example with parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def my_funct(param):
+              print(param)
+            my_funct("my argument")
+            # my argument
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer"):
+              print(f"Hello, {name}! Welcome to Python.")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer"):
+              print(f"Hello, {name}! Welcome to Python.")
+            say_hello("Maliq")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer"):
+              print(f"Hello, {name}! Welcome to Python.")
+            say_hello("Maliq")
+            # "Hello, Maliq! Welcome to Python."
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer"):
+              print(f"Hello, {name}! Welcome to Python.")
+            say_hello()
+           </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer"):
+              print(f"Hello, {name}! Welcome to Python.")
+            say_hello()
+            # "Hello, programmer! Welcome to Python."
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer", language="Python"):
+              print(f"Hello, {name}! Welcome to {language}.")
+            say_hello()
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer", language="Python"):
+              print(f"Hello, {name}! Welcome to {language}.")
+            say_hello()
+            # "Hello, programmer! Welcome to Python."
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer", language="Python"):
+              print(f"Hello, {name}! Welcome to {language}.")
+            say_hello("Tillman")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer", language="Python"):
+              print(f"Hello, {name}! Welcome to {language}.")
+            say_hello("Tillman")
+            # "Hello, Tillman! Welcome to Python."
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer", language="Python"):
+              print(f"Hello, {name}! Welcome to {language}.")
+            say_hello("Tillman", "Java")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <h2 data-id="code-title">function example with default parameters</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def say_hello(name="programmer", language="Python"):
+              print(f"Hello, {name}! Welcome to {language}.")
+            say_hello("Tillman", "Java")
+            # "Hello, Tillman! Welcome to Java."
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              print(a + b)
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              print(a + b)
+            add(2,2)
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              print(a + b)
+            add(2,2)
+            # 4
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              print(a + b)
+            result = add(2,2)
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              print(a + b)
+            result = add(2,2)
+            print(result)
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              print(a + b)
+            result = add(2,2)
+            print(result)
+            # None
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+              return(a + b)
+            result = add(2,2)
+            print(result)
+          </code></pre>
+        </section>
+
+        <section data-auto-animate>
+          <p class="fragment">a function is what it returns</p>
+          <h2 data-id="code-title"><code>return</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def add(a,b):
+            return(a + b)
+            result = add(2,2)
+            print(result)
+            # 4
+          </code></pre>
+        </section>
+        
+        <section>
+          <h1>Challenge:</h1>
+          <p class="fragment">Write a function that prints all the integers from 0 up to some number: n</p>
+          <section data-auto-animate class="fragment">
+          <h2 data-id="code-title"><code>challenge</code></h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            def print_ints_to_n(n):
+              pass
+          </code></pre>
+        </section>
+        </section>
+        
+        
+      </section>
+      
+      
+      
     
     
     

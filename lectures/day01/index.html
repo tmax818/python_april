@@ -52,64 +52,72 @@
       </section>
 
       <section id="syntax">
-          <h2>Python Syntax</h2>
-          <section data-auto-animate> 
-            <h2 data-id="code-title">indentation and code blocks</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-            def funct_name(params):
-              # anything indented on the same level is
-            </code></pre>
-          </section>
-          <section data-auto-animate> 
-            <h2 data-id="code-title">indentation and code blocks</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-            def funct_name(params):
-              # anything indented on the same level is
-              # part of the block
-            </code></pre>
-          </section>
-          <section data-auto-animate> 
-            <h2 data-id="code-title">indentation and code blocks</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-            def funct_name(params):
-              # anything indented on the same level is
-              # part of the block
-              print("inside function block")
-            </code></pre>
-          </section>
-          <section data-auto-animate> 
-            <h2 data-id="code-title">indentation and code blocks</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-            def funct_name(params):
-              # anything indented on the same level is
-              # part of the block
-              print("inside function block")
-            print("outside function block")
-            </code></pre>
-          </section>
-          <section>
-            <p class="fragment grow">A colon (:) and indentation on the next line signify a code block</p>
-          </section>
-          <section data-auto-animate> 
-            <h2 data-id="code-title">indentation and code blocks</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-            while True:
-              # anything indented on the same level is
-              # part of this while loop
-              print("inside while loop")
+        <section>
+          <h1>Python Syntax</h1>
+        </section>
 
-            </code></pre>
-          </section>
-          <section data-auto-animate> 
-            <h2 data-id="code-title">indentation and code blocks</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-            while True:
-              # anything indented on the same level is
-              # part of this while loop
-              print("inside while loop")
-            print("outside while loop")
-            </code></pre>
-          </section>
+        <section data-auto-animate> 
+          <h2 data-id="code-title">indentation and code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          def funct_name(params):
+            # anything indented on the same level is
+          </code></pre>
+        </section>
+
+        <section data-auto-animate> 
+          <h2 data-id="code-title">indentation and code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          def funct_name(params):
+            # anything indented on the same level is
+            # part of the block
+          </code></pre>
+        </section>
+
+        <section data-auto-animate> 
+          <h2 data-id="code-title">indentation and code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          def funct_name(params):
+            # anything indented on the same level is
+            # part of the block
+            print("inside function block")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate> 
+          <h2 data-id="code-title">indentation and code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          def funct_name(params):
+            # anything indented on the same level is
+            # part of the block
+            print("inside function block")
+          print("outside function block")
+          </code></pre>
+        </section>
+
+        <section>
+          <p class="fragment grow">A colon (:) and indentation on the next line signify a code block</p>
+        </section>
+
+        <section data-auto-animate> 
+          <h2 data-id="code-title">indentation and code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          while True:
+            # anything indented on the same level is
+            # part of this while loop
+            print("inside while loop")
+          </code></pre>
+        </section>
+
+        <section data-auto-animate> 
+          <h2 data-id="code-title">indentation and code blocks</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          while True:
+            # anything indented on the same level is
+            # part of this while loop
+            print("inside while loop")
+          print("outside while loop")
+          </code></pre>
+        </section>
 
       </section>
 
@@ -253,6 +261,45 @@
           #=> ['apple', 'banana', 'blueberry']
           </code></pre>
           </section>
+          <section id="dictionaries">
+            <h1>Dictionaries</h1>
+            <p class="fragment"> Dictionaries consist of pairs (called items) of keys and their corresponding values.</p>
+            <p class="fragment"> aka hash table or associative arrays</p>
+          </section>
+
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          </code></pre>
+          </section>
+
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          person_dict['hobbies'] = []
+          </code></pre>
+          </section>
+
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          person_dict['hobbies'] = []
+          print(person_dict)
+          </code></pre>
+          </section>
+
+          <section data-auto-animate>
+          <h2 data-id="code-title">Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+          person_dict = {'name': 'Tyler', 'age': 39, 'is_admin': True}
+          person_dict['hobbies'] = []
+          print(person_dict)
+          # {'name': 'Tyler', 'age': 39, 'is_admin': True, 'hobbies': []}
+          </code></pre>
+          </section>
           
           <section data-auto-animate>
           <h2 data-id="code-title">Dictionaries vs Lists</h2>
@@ -320,6 +367,17 @@
           person_dict = {0: 'Tyler', 1: 39, 2: True}
           person_dict[0]
           # => 'Tyler'
+          </code></pre>
+          </section>
+
+          <section data-auto-animate>
+          <h2 data-id="code-title">Lists of Dictionaries</h2>
+          <pre data-id="code-animation"><code class="hljs" data-trim>
+            person_list = [
+            {'name': 'Joan', 'age': 21, 'is_admin': True},
+            {'name': 'Gary', 'age': 25, 'is_admin': False},
+            {'name': 'Malo', 'age': 21, 'is_admin': True}
+            ]
           </code></pre>
           </section>
 
@@ -634,7 +692,16 @@
           <p class="fragment"><code>def</code></p>
         </section>
 
+        <section id="built-in">
+          <h1>Built-in Functions</h1>
+          <a href="https://docs.python.org/3/library/functions.html">list of built-in functions</a>
+          <p class="fragment">What is the most important function in Python?</p>
+
+          <p class="fragment"><a href="https://docs.python.org/3/library/functions.html#print"><code>print()</code></a></p>
+        </section>
+
         <section data-auto-animate>
+          <h1>User defined functions</h1>
           <p class="fragment">use <code>def</code> keyword to create a function</p>
           <p class="fragment">use <code>()</code> for function parameters </p>
           <p class="fragment">use <code>:</code> to establish a code block </p>

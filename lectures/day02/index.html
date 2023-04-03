@@ -49,62 +49,53 @@
           <p class="fragment"><a href="#class-structure">Class Structure</a></p>
           <p class="fragment"><a href="#chaining-methods">Chaining Methods</a></p>
           <p class="fragment"><a href="#class-methods">Class Methods</a></p>
-          <p class="fragment"><a href="#static-methods">Static MSethods</a></p>
+          <p class="fragment"><a href="#static-methods">Static Methods</a></p>
         </section>
 
         <section id="instancevclass">
           <section>
             <h1>instance vs class</h1>
           </section>
-        </section>
+            <section>
+              <p class="fragment">Everything in Python is an object.</p>
+              <p class="fragment">What does that mean?</p>
+              <div class="r-stack">
+                <img class="fragment" src="../../images/bankacct.jpg" alt="">
+                <img class="fragment" src="../../images/dice.jpg" alt="">
+                <img class="fragment" src="../../images/objs.jpg" alt="">
+                <img class="fragment" src="../../images/teslaobj.jpg" alt="">
+              </div>
+            </section>
 
-        <section id="class-structure">
-          <section>
-            <h1>Class Structure</h1>
+          <section data-background-video="https://tesla-cdn.thron.com/delivery/public/video/tesla/02bfc300-50c2-4500-abc1-d251f5f42dc2/bvlatuR/WEBHD/manufacturing-hero-desktop">
+              <h1>This is the class</h1>
+            </section>
+            <section data-background-image="../../images/dude_in_tesla.jpg">
+              <h1>This is an instance of the class</h1>
+            </section>
+          </section>
+          
+        <section data-background-video="https://tesla-cdn.thron.com/delivery/public/video/tesla/02bfc300-50c2-4500-abc1-d251f5f42dc2/bvlatuR/WEBHD/manufacturing-hero-desktop" id="class-structure">
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Definition</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class User:
+              pass
+            </code></pre>
           </section>
           <section data-auto-animate> 
             <h2 data-id="code-title">Class Definition</h2>
             <pre data-id="code-animation"><code class="hljs" data-trim>
               class User:
-                pass
+                def __init__(self, model, color, milage):
+                  self.model = model
+                  self.color = color 
+                  self.milage = 0
             </code></pre>
           </section>
-
-          <section data-auto-animate> 
-            <h2 data-id="code-title">Class Instantiation</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-              class User:
-                pass
-              user = User()
-            </code></pre>
-          </section>
-
-          <section data-auto-animate> 
-            <h2 data-id="code-title">Class Structure</h2>
-            <pre data-id="code-animation"><code class="hljs" data-trim>
-              class User:
-
-              </code></pre>
-            </section>
-            
-            <section data-auto-animate> 
-              <h2 data-id="code-title">Class Structure</h2>
-              <pre data-id="code-animation"><code class="hljs" data-trim>
-                class User:
-
-                  def __init__(self, username, email, password):
-                    self.username = username
-                    self.email = email
-                    self.password = password
-              </code></pre>
-            </section>
 
         </section>
-
-
-
-
-
+        
         <section id="chaining-methods">
 
         </section>

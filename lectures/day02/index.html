@@ -170,6 +170,7 @@
             <h2 data-id="code-title">Class Attributes</h2>
             <pre data-id="code-animation"><code class="hljs" data-trim>
               class Tesla:
+
                 def __init__(self, model, color, milage):
                   self.model = model
                   self.color = color 
@@ -186,6 +187,7 @@
               class Tesla:
 
                 all_teslas = []
+
                 def __init__(self, model, color, milage):
                   self.model = model
                   self.color = color 
@@ -202,6 +204,7 @@
               class Tesla:
                 # this is the class attribute
                 all_teslas = []
+
                 def __init__(self, model, color, milage):
                   self.model = model
                   self.color = color 
@@ -218,6 +221,7 @@
               class Tesla:
                 # this is the class attribute
                 all_teslas = []
+
                 def __init__(self, model, color, milage):
                   self.model = model
                   self.color = color 
@@ -236,6 +240,7 @@
                 # these are the class attributes
                 all_teslas = []
                 CEO = "Elon Musk"
+
                 def __init__(self, model, color, milage):
                   self.model = model
                   self.color = color 
@@ -247,24 +252,62 @@
             </code></pre>
           </section>
 
-          <section>
-            <h2>Class Methods</h2>
-            <p class="fragment">Use the <code>@classmethod</code> decorator</p>
-            <section class="fragment" data-auto-animate> 
-              <h2 data-id="code-title">Class Attributes</h2>
-              <pre data-id="code-animation"><code class="hljs" data-trim>
-                class Tesla:
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                # these are the class attributes
+                all_teslas = []
+                CEO = "Elon Musk"
 
-                  # class attributes go above __init__
-                  CEO = "Elon Musk"
-                  ... 
+            </code></pre>
+          </section>
 
-                  @classmethod
-                  def get_CEO(cls):
-                    return cls.CEO
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                # these are the class attributes
+                all_teslas = []
+                CEO = "Elon Musk"
 
-              </code></pre>
-            </section>
+                @classmethod
+
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                # these are the class attributes
+                all_teslas = []
+                CEO = "Elon Musk"
+
+                @classmethod
+                def get_ceo(cls):
+                  return cls.CEO
+
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                # these are the class attributes
+                all_teslas = []
+                CEO = "Elon Musk"
+
+                @classmethod
+                def get_ceo(cls):
+                  return Tesla.CEO
+
+            </code></pre>
+          </section>
+
+
+
           </section>
 
 

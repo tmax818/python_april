@@ -76,17 +76,28 @@
           </section>
           
         <section data-background-video="https://tesla-cdn.thron.com/delivery/public/video/tesla/02bfc300-50c2-4500-abc1-d251f5f42dc2/bvlatuR/WEBHD/manufacturing-hero-desktop" id="class-structure">
+
           <section data-auto-animate> 
             <h2 data-id="code-title">Class Definition</h2>
             <pre data-id="code-animation"><code class="hljs" data-trim>
-              class User:
-              pass
+              class Tesla:
+                pass
             </code></pre>
           </section>
+
           <section data-auto-animate> 
             <h2 data-id="code-title">Class Definition</h2>
             <pre data-id="code-animation"><code class="hljs" data-trim>
-              class User:
+              class Tesla:
+                def __init__(self, model):
+                  self.model = model
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Definition</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
                 def __init__(self, model, color, milage):
                   self.model = model
                   self.color = color 
@@ -94,7 +105,56 @@
             </code></pre>
           </section>
 
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Definition</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                def __init__(self, model, color, milage):
+                  self.model = model
+                  self.color = color 
+                  self.milage = 0
+
+                def drive(self):
+                  print(f"I am driving my {self.color} {self.model} Tesla!")
+            </code></pre>
+          </section>
+
         </section>
+
+        <section data-background-image="../../images/dude_in_tesla.jpg" id="class-structure1">
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Instantiation</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              johns_tesla = Tesla("modelX", "white", 0)
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Instantiation</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              johns_tesla = Tesla("modelX", "white", 0)
+              johns_tesla.drive()
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">Class Instantiation</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              johns_tesla = Tesla("modelX", "white", 0)
+              johns_tesla.drive()
+              # I am driving my white modelX Tesla!
+            </code></pre>
+          </section>
+
+     
+
+      
+
+        </section>
+
+
+        
         
         <section id="chaining-methods">
 

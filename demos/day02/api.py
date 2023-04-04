@@ -1,2 +1,2 @@
 
-api = "KeBmM7FM3DYLHgDbomVvTbsupGgYmpcR"
+API = "KeBmM7FM3DYLHgDbomVvTbsupGgYmpcR"

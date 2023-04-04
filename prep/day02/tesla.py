@@ -1,3 +1,5 @@
+import requests
+
 class Tesla:
     
     CEO = "Elon Musk"
@@ -16,6 +18,11 @@ class Tesla:
     def get_all_teslas(cls):
         for tesla in cls.all_teslas:
             print(tesla)
+            
+    @staticmethod
+    def get_stock_quote(ticker):
+        quote = requests.get(f"https://api.polygon.io/v2/aggs/ticker/{ticker}/range/1/day/2023-01-09/2023-01-09?adjusted=true&sort=asc&limit=120&apiKey=KeBmM7FM3DYLHgDbomVvTbsupGgYmpcR").json()
+        print(quote)
     
     
     

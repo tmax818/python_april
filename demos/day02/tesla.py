@@ -23,26 +23,6 @@ drive(tylers_tesla)
      
 hirals_tesla.drive()
 hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
-hirals_tesla.drive()
+
 
 print(tylers_tesla)
-# print(tylers_tesla.mileage)
-# print("Autopilot:", tylers_tesla.autopilot)
-# print("*" * 8)
-# print(hirals_tesla)
-# print(hirals_tesla.mileage)
-
-# def make_car(make, model, color):
-#     print(make, model, color)
-#     pass
-
-# make_car("ford", "mustang", "red" )

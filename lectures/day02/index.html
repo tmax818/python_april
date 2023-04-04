@@ -305,29 +305,61 @@
 
             </code></pre>
           </section>
-
-
-
           </section>
 
 
-        </section>
-
         <section id="static-methods">
+          <section>
+            <h2>Static Methods</h2>
+            <p class="fragment">use the <code>@staticmethod</code> decorator</p>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">static methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                def __init__(self, model, color, milage):
+                  self.model = model
+                  self.color = color 
+                  self.milage = 0
+
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">static methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                def __init__(self, model, color, milage):
+                  self.model = model
+                  self.color = color 
+                  self.milage = 0
+                  self.tires_flat = False
+
+            </code></pre>
+          </section>
+
+          <section data-auto-animate> 
+            <h2 data-id="code-title">static methods</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim>
+              class Tesla:
+                def __init__(self, model, color, milage):
+                  self.model = model
+                  self.color = color 
+                  self.milage = 0
+                  self.tires_flat = False
+
+                @staticmethod
+                def fix_tire(tesla):
+                  tesla.tires_flat = False
+
+            </code></pre>
+          </section>
 
         </section>
 
 
-        <section data-markdown="01overview.md"
-            data-separator="^---"
-            data-separator-vertical="^--"
-            data-separator-notes="^note:"
-            data-charset="iso-8859-15">
-        </section>
 
-
-
-            
         <section data-markdown="01intro.md"
           data-separator="^---"
           data-separator-vertical="^--"

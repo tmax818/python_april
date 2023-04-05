@@ -21,7 +21,7 @@ class Player:
 
 - [ ] Challenge 1: Update the constructor to accept a dictionary (data) as an argument and set the attributes using the dictionary
 
-- [ ] Complete challenge 2: Create 3 instances of the Player class using the given dictionaries
+- [ ] Complete challenge 2: Create 3 instances of the Player class using the list from [players.py](players.py)
 
 - [ ] Complete challenge 3: Populate a new list with Player instances from the list of players.
 

@@ -25,4 +25,4 @@ class Player:
 
 - [ ] Complete challenge 3: Populate a new list with Player instances from the list of players.
 
-- [ ] Ninja Bonus: Add an @class method called get_team(cls, team_list) that, given a list of dictionaries populates and returns a new list of Player objects.
+- [ ] Ninja Bonus: Add a `@classmethod` called `get_team(cls, team_list)` that, given a list of dictionaries populates and returns a new list of Player objects.

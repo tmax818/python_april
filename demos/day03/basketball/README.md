@@ -1,10 +1,11 @@
 # Basketball Dictionaries
 
-## tasks
 
 ### Tyler's added challenge:
 
-- [ ] Create a new [file](players.py) to hold the players list.
+- [ ] Create a new file: [players.py](players.py) to hold the players list.
+
+## tasks
 
 - [ ] Set up a new [file](player.py) and add the Player class with the given constructor:
 

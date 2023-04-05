@@ -1,0 +1,2 @@
+class VampireBat(Bat):
+    pass

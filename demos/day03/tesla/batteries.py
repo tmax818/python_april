@@ -1,0 +1,2 @@
+class Batteries:
+    pass

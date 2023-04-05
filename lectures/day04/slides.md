@@ -10,8 +10,8 @@
 ## Assignments
 
 ### Understanding Routing (Practice)
-### Playground (Practice)
-### Checkerboard (Core)
+### Playground (Core)
+### Checkerboard (Practice)
 ### HTML Table (Core)
 ---
 # Virtual Environments

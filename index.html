@@ -56,8 +56,46 @@
   </nav>
   <div class="container">
 
-    <img src="./images/python-logo.png" width="45%" class="img-fluid" alt="...">
-    <img src="./images/flask-logo.png" width="45%" class="img-fluid" alt="...">
+    <img src="./images/python-logo.png" width="25%" class="img-fluid" alt="...">
+    <img src="./images/flask-logo.png" width="25%" class="img-fluid" alt="...">
+    <h3>The Four Ways of Interpolation</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">File</th>
+          <th scope="col">Syntax</th>
+          <th scope="col">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>server.py</td>
+          <td><code><pre>
+            @app.route('route/&ltint:id>')
+            def route(id):
+              return render_template('index.html', id = id)
+          </pre>
+          </code></td>
+          <td><code>&ltint:id&gt</code> used to insert variables in routes <code>id</code> must be passed down to the python function. This syntax is ONLY available in route decorators!</td>
+        </tr>
+        <tr>
+          <td><code>*.html</td>
+          <td><code><pre>
+            {{id}}
+          </pre>
+          </code></td>
+          <td>jinja tags <code>{{id}}</code> used to render content in any html page. <code>id</code> must be passed from the <code>render_template</code> function.</td>
+        </tr>
+        <tr>
+          <td><code>*.py</code> inside python functions</td>
+          <td><code><pre>
+            f"{id}"
+          </pre>
+          </code></td>
+          <td>Python code requires Python syntax. Inside Python functions, use string interpolation where necessary</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    {{languages}}
+    <h1>survey demo</h1>
+
+    <form action="/handle_form" method="post">
+        Name: <input type="text" name="name" id="">
+        <select name="language" id="">
+            {% for language in languages  %}
+            <option value="{{language}}">{{language.capitalize()}}</option>                
+            {% endfor %}
+
+        </select>
+        <input type="submit" value="create">
+    </form>
+</body>
+</html>

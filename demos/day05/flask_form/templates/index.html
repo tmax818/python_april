@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+    <h1>Form demo</h1>
+    <form action="/handle_form" method="post">
+        favorite color: <input type="text" name="favorite_color" id="">
+        favorite animal: <input type="text" name="favorite_animal" id="">
+        <input type="submit" value="tell me your fav color">
+    </form>
+    <h1>Your favorite color is {{session.favorite_color}} and your favorite animal is {{session.favorite_animal}}</h1>
+</body>
+</html>

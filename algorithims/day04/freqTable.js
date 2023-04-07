@@ -7,7 +7,7 @@ const arr1 = ["a", "a", "a"];
 const expected1 = {
   a: 3,
 };
-
+// {a: 2, b: 1 c:3, B: 1, d: 1 }
 const arr2 = ["a", "b", "a", "c", "B", "c", "c", "d"];
 const expected2 = {
   a: 2,
@@ -28,4 +28,8 @@ const expected3 = {};
  * @returns {Object<string, number>} A frequency table where the keys are items
  *    from the given arr and the values are the amnt of times that item occurs.
  */
-function makeFrequencyTable(arr) {}
+function makeFrequencyTable(arr) {
+  const freqTable = {}
+}
+
+module.exports = {makeFrequencyTable}

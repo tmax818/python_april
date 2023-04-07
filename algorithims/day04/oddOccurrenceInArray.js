@@ -1,5 +1,5 @@
 // https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
-
+import { makeFrequencyTable } from "./freqTable";
 /* 
 Given a non-empty array of odd length containing ints where every int but one
 has a matching pair (another int that is the same)

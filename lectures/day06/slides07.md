@@ -108,14 +108,6 @@ WHERE column_name LIKE "M%";
 - select everything from table_names in column name that starts with M. <!-- .element: class="fragment" -->
 --
 
-```sql
-SELECT *
-FROM table_names 
-WHERE column_name <> "M%";
-```
-
-- select everything from table_names in column name that does not start with M. <!-- .element: class="fragment" -->
---
 ### `SELECT` with Sorting
 --
 ```sql
@@ -169,8 +161,6 @@ WHERE condition(s)
 DELETE FROM table_name (column_name1, column_name2) 
 VALUES('column1_value', 'column2_value') WHERE id = id;
 ```
----
-## Functions
 ---
 ## Joins
 --

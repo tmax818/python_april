@@ -18,7 +18,8 @@ const expected3 = false;
 const str4 = "a(b))(c";
 const expected4 = false;
 // Explanation: same number of opens and closes but the 2nd closing closes nothing.
-
+const str5 = ")((((()))))"
+const str6 = ")))))((((("
 /**
  * Determines whether the parenthesis in the given string are valid.
  * Each opening parenthesis must have exactly one closing parenthesis.

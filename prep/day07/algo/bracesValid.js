@@ -20,4 +20,33 @@ const expected3 = false;
  * @param {string} str
  * @returns {boolean} Whether the given strings braces are valid.
  */
-function bracesValid(str) {}
+function bracesValid(str) {
+    const stack = [];
+    const closeToOpen = {')': '(', '}': '{', ']': '['};
+    for(let i = 0; i < str.length; i++){
+        switch(str[i]){
+            case '(':
+            case '{':
+            case '[':
+                stack.push(str[i]);
+                break;
+            case ')':
+            case '}':
+            case ']':
+                if(closeToOpen[str[i]] === stack[stack.length -1]){
+                    stack.pop()
+                } else {
+                    return false;
+                }
+                break;
+                default:
+                    break;
+
+        }
+    }
+    return stack.length === 0;
+}
+
+console.log(bracesValid(str1))
+console.log(bracesValid(str2))
+console.log(bracesValid(str3))

@@ -213,7 +213,7 @@ class Friend:
 <!-- .element:class="r-stretch" -->
 <!-- .element:class="fragment" -->
 --
-![](/../../images/mod1.png)
+![](./../../images/mod1.png)
 --
 ![](/../../images/mod2.png)
 --

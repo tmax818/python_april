@@ -13,12 +13,15 @@ class Book:
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
         
+    def show_title(self):
+        return self.title
+        
     @classmethod
     def get_all(cls):
         query = "SELECT * FROM books;"
         results = connectToMySQL(DATABASE).query_db(query)
         pprint(results)
         books = []
-        for book in results:
-            books.append(Book(book))
+        for book_dict in results:
+            books.append(cls(book_dict))
         return books

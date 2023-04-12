@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{friends}}
+    <h1>friends</h1>
+    <table>
+        <thead>
+            <th>
+                <td>first</td>
+                <td>last</td>
+                <td>occupation</td>
+            </th>
+        </thead>
+        <tbody>
+            {% for friend in friends  %}
+                <tr>
+                    <td>{{friend.first_name}}</td>
+                    <td>{{friend.last_name}}</td>
+                    <td>{{friend.occupation}}</td>
+                    <td>{{friend.say_hello()}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/new">new friend</a>
+</body>
+</html>

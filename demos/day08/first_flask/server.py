@@ -11,6 +11,7 @@ def new():
 @app.route("/create", methods=['post'])
 def create_friend():
     print(request.form)
+    Friend.save(request.form)
     return redirect('/')
 
 

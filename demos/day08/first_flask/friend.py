@@ -2,6 +2,9 @@
 from mysqlconnection import connectToMySQL
 from pprint import pprint
 # model the class after the friend table from our database
+
+DATABASE = 'first_flask'
+
 class Friend:
     def __init__( self , data ):
         self.id = data['id']
@@ -17,7 +20,8 @@ class Friend:
     #! CREATE
     @classmethod
     def save(cls, data):
-        pass
+        query = "INSERT INTO friends (first_name, last_name, occupation) VALUES (%(first_name)s, %(last_name)s, %(occupation)s);"
+        return connectToMySQL(DATABASE).query_db(query, data)
 
     # Now we use class methods to query our database
     #! READ ALL
@@ -25,7 +29,7 @@ class Friend:
     def get_all(cls):
         query = "SELECT * FROM friends;"
         # make sure to call the connectToMySQL function with the schema you are targeting.
-        results = connectToMySQL('first_flask').query_db(query)
+        results = connectToMySQL(DATABASE).query_db(query)
         # results is a list of dictionaries
         pprint(results)
         # Create an empty list to append our instances of friends

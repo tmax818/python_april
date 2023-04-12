@@ -193,7 +193,7 @@ class Friend:
 ---
 ## MVC
 --
-![](/../../images/mvc.png)
+![](/images/mvc.png)
 <!-- .element: data-trim class="r-stretch r-fit-text" -->
 <!-- .slide:data-background="#fff" -->
 --

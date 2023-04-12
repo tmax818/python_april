@@ -193,11 +193,11 @@ class Friend:
 ---
 ## MVC
 --
-![](/images/mvc.png)
+![](./../../images/mvc.png)
 <!-- .element: data-trim class="r-stretch r-fit-text" -->
 <!-- .slide:data-background="#fff" -->
 --
-![](/../../images/mvc2.png)
+![](./../../images/mvc2.png)
 <!-- .element: data-trim class="r-stretch r-fit-text" -->
 ---
 ## Modularization
@@ -209,23 +209,23 @@ class Friend:
 
 --
 ### Our file structure looked like this:
-![](/../../images/pre-mod.png)
+![](./../../images/pre-mod.png)
 <!-- .element:class="r-stretch" -->
 <!-- .element:class="fragment" -->
 --
 ![](./../../images/mod1.png)
 --
-![](/../../images/mod2.png)
+![](./../../images/mod2.png)
 --
-![](/../../images/mod3.png)
+![](./../../images/mod3.png)
 --
-![](/../../images/mod4.png)
+![](./../../images/mod4.png)
 --
-![](/../../images/mod5.png)
+![](./../../images/mod5.png)
 --
-![](/../../images/mod6.png)
+![](./../../images/mod6.png)
 --
-![](/../../images/mod7.png)
+![](./../../images/mod7.png)
 ---
 ## Controllers
 --

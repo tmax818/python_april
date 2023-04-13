@@ -3,7 +3,7 @@
   returns whether the second string is a rotation of the first.
 */
 
-const strA1 = "ABCD";
+const strA1 = "ABCDABCD";
 const strB1 = "CDAB";
 // Explanation: if you start from A in the 2nd string, the letters are in the same order, just rotated
 const expected1 = true;

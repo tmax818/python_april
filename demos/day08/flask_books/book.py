@@ -2,11 +2,9 @@
 from mysqlconnection import connectToMySQL
 from pprint import pprint
 
-
 DATABASE = "books_schema"
 
 class Book:
-    
     
     def __init__(self, data:dict) -> None:
         self.id = data['id']
@@ -37,26 +35,10 @@ class Book:
     
     #! READ ONE
     @classmethod
-    def get_book(cls, id):
+    def get_book(cls, data):
         query = "SELECT * FROM books WHERE id = %(id)s;"
-        data = {'id': id}
         result = connectToMySQL(DATABASE).query_db(query, data)
         print(result[0])
         book = Book(result[0])
         return book
-    
-    #! UPDATE
-    @classmethod
-    def update(cls, data):
-        query = "UPDATE books SET title=%(title)s, author=%(author)s WHERE id = %(id)s;"
-        return connectToMySQL(DATABASE).query_db(query, data)
-    
-    #! DELETE
-    @classmethod
-    def delete(cls, id):
-        query = "DELETE FROM books WHERE id = %(id)s;"
-        data = {
-            'id':id
-        }
-        return connectToMySQL(DATABASE).query_db(query, data)
         

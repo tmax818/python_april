@@ -10,6 +10,9 @@ const str = "Hello World";
 const rotateAmnt1 = 0;
 const expected1 = "Hello World";
 
+const rotateAmnt6 = 11;
+const expected6 = "Hello World";
+
 const rotateAmnt2 = 1;
 const expected2 = "dHello Worl";
 

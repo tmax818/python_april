@@ -4,7 +4,7 @@ import re	# the regex module
 # create a regular expression object that we'll use later   
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$') 
 
-DATABASE = "books"
+DATABASE = "login_reg"
 
 class User:
     
@@ -22,6 +22,19 @@ class User:
     def save(cls, data):
         query = "INSERT INTO users (first_name, last_name, email, password) VALUES (%(first_name)s, %(last_name)s, %(email)s, %(password)s);"
         return connectToMySQL(DATABASE).query_db(query, data)
+    
+    @classmethod
+    def find_by_email(cls, email):
+        query = "SELECT * FROM users WHERE email = %(email)s;"
+        data = {'email': email}
+        result = connectToMySQL(DATABASE).query_db(query, data)
+        print(result)
+        if len(result) > 0:
+            user = User(result[0])
+            return user
+        else:
+            return False
+            
     
     @staticmethod
     def validate_user(user):

@@ -18,25 +18,42 @@
 
 
     <div class="container">
+        <div class="row">
+            <div class="col">
                 <h2>register</h2>
                 <form action="/register" method="post">
-                <div class="form-control">
-                    first: <input type="text" name="first_name">
-                </div>
-                <div class="form-control">
-                    last: <input type="text" name="last_name">
-                </div>
-                <div class="form-control">
-                    email: <input type="text" name="email">
-                </div>
-                <div class="form-control">
-                    password: <input type="text" name="password">
-                </div>
-                <div class="form-control">
-                    confirm_password: <input type="text" name="confirm_password">
-                </div>
-                <input type="submit" value="register">
-            </form>
+                    <div class="form-control">
+                        first: <input type="text" name="first_name">
+                    </div>
+                    <div class="form-control">
+                        last: <input type="text" name="last_name">
+                    </div>
+                    <div class="form-control">
+                        email: <input type="text" name="email">
+                    </div>
+                    <div class="form-control">
+                        password: <input type="text" name="password">
+                    </div>
+                    <div class="form-control">
+                        confirm_password: <input type="text" name="confirm_password">
+                    </div>
+                    <input type="submit" value="register">
+                </form>
+            </div>
+            <div class="col">
+                <h1>login</h1>
+                <form action="/login" method="post">
+                    <div class="form-control">
+                        email: <input type="text" name="email" id="">
+                    </div>
+                    <div class="form-control">
+                        password: <input type="text" name="password" id="">
+                    </div>
+                    <input type="submit" value="login">
+
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

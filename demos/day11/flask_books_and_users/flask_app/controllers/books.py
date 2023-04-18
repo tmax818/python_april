@@ -42,7 +42,7 @@ def edit_book(id):
 def update_book():
     print(request.form)
     Book.update(request.form)
-    return redirect('/')
+    return redirect('/books')
 
 #! DELETE 
 @app.route('/books/delete/<int:id>')

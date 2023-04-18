@@ -77,6 +77,9 @@ class User:
     @staticmethod
     def validate_user(user):
         is_valid = True
+        if User.find_by_email(user['email']):
+            is_valid = False
+            flash("you have already registered!!!!")
         if len(user['first_name']) < 2:
             is_valid = False
             flash("first name must be at least 2 chars")

@@ -53,7 +53,7 @@ class Book:
     #! UPDATE
     @classmethod
     def update(cls, data):
-        query = "UPDATE books SET title=%(title)s, author=%(author)s WHERE id = %(id)s;"
+        query = "UPDATE books SET title=%(title)s, author=%(author)s, thoughts=%(thoughts)s,finished=%(finished)s, date_read=%(date_read)s WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query, data)
     
     #! DELETE

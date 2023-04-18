@@ -19,7 +19,11 @@ def index():
 @app.route("/register", methods=['post'])
 def register():
     print(request.form)
-    
+    # Dan's way is better!!!
+    # user = User.find_by_email(request.form['email'])
+    # if user:
+    #     flash("email is taken")
+    #     return redirect('/')
     # TODO validate user
     if not User.validate_user(request.form):
         return redirect('/')

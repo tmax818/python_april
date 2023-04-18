@@ -36,8 +36,11 @@
                     <td>{{book.user}}</td>
                     <td>
                         <a href="/books/{{book.id}}">show</a>
+                        {% if session.user_id == book.user_id %}
                         <a href="/books/edit/{{book.id}}">edit</a>
                         <a href="/books/delete/{{book.id}}">delete</a>
+                        {% endif %}
+
                     </td>
                 </tr>    
             {% endfor %}

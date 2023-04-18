@@ -18,7 +18,29 @@
         <div class="form-control">
             title: <input type="text" name="title" id="" value="{{book.title}}">
         </div>
-        <input type="submit" value="edit book">
+        <div class="form-control">
+            thoughts: <input type="text" name="thoughts" value="{{book.thoughts}}">
+        </div>
+        <div class="form-control">
+            date read: <input type="date" name="date_read" id="" value="{{book.date_read}}">
+        </div>
+        <div class="form-control">
+            finished: 
+            {% if book.finished %}
+                <input type="radio" id="yes" name="finished" value="1" checked>
+                <label for="yes">yes</label><br>
+                <input type="radio" id="no" name="finished" value="0">
+                <label for="no">no</label><br>
+            {% else %}              
+                <input type="radio" id="yes" name="finished" value="1">
+                <label for="yes">yes</label><br>
+                <input type="radio" id="no" name="finished" value="0" checked>
+                <label for="no">no</label><br>
+            {% endif %}
+
+
+        </div>
+        <input type="submit" value="add book">
     </form>
 </body>
 </html>

@@ -11,18 +11,26 @@
     {{users}}
     <h1>Add a book</h1>
     <form action="/create" method="post">
-        <form-control>
-            <select name="user_id" id="">
-                {% for user in users  %}
-                <option value="{{user.id}}">{{user.first_name}}</option>
-                {% endfor %}
-            </select>
-        </form-control>
+        <input type="hidden" name="user_id" value="{{session.user_id}}">
         <div class="form-control">
             author: <input type="text" name="author" id="">
         </div>
         <div class="form-control">
             title: <input type="text" name="title" id="">
+        </div>
+        <div class="form-control">
+            thoughts: <input type="text" name="thoughts">
+        </div>
+        <div class="form-control">
+            date read: <input type="date" name="date_read" id="">
+        </div>
+        <div class="form-control">
+            finished: 
+            <input type="radio" id="yes" name="finished" value="1">
+            <label for="yes">yes</label><br>
+            <input type="radio" id="no" name="finished" value="0">
+            <label for="no">no</label><br>
+
         </div>
         <input type="submit" value="add book">
     </form>

@@ -1,24 +1,28 @@
-from flask_app import app, render_template, redirect, request 
+from flask_app import app, render_template, redirect, request, session 
 from flask_app.models.book import Book
 from flask_app.models.user import User
 
 #! CREATE
 @app.route('/new')
 def new():
+    if 'user_id' not in session:
+        return redirect('/logout')
     return render_template('books/new.html', users = User.get_all())
 
 @app.route('/create', methods=['post'])
 def create():
     print(request.form)
     Book.save(request.form)
-    return redirect('/')
+    return redirect('/books')
 
 #! READ ALL
 @app.route('/books')        
 def books():
+    if 'user_id' not in session:
+        return redirect('/logout')
     books = Book.get_all()
     print(books)
-    return render_template('books/index.html', books = books)  # Return the string 'Hello World!' as a response
+    return render_template('books/index.html', books = books) 
 
 #! READ ONE
 @app.route('/books/<int:id>')

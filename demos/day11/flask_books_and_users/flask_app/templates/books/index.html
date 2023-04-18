@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="container">
-
+        {{books}}
         <h1>books</h1>
         <table class="table">
             <thead>
                 <tr>
                     <th>author</th>
                     <th>title</th>
+                    <th>finished</th>
+                    <th>posted by</th>
                     <th>actions</th>
                 </tr>
             </thead>
@@ -25,6 +27,14 @@
                     <td>{{book.author}}</td>
                     <td>{{book.title}}</td>
                     <td>
+                        {% if book.finished %}
+                            yes
+                        {% else %}
+                            no
+                        {% endif %}
+                    </td>
+                    <td>{{book.user}}</td>
+                    <td>
                         <a href="/books/{{book.id}}">show</a>
                         <a href="/books/edit/{{book.id}}">edit</a>
                         <a href="/books/delete/{{book.id}}">delete</a>
@@ -33,8 +43,9 @@
             {% endfor %}
             </tbody>
         </table>
-        <a class="btn btn-danger" href="/new" >add book</a>
+        <a class="btn btn-warning" href="/new" >add book</a>
         <a class="btn btn-primary" href="/users" >all users</a>
+        <a class="btn btn-danger" href="/logout" >logout</a>
     </div>
         </body>
 </html>

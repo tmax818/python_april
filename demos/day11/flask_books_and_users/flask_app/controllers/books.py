@@ -12,6 +12,8 @@ def new():
 @app.route('/create', methods=['post'])
 def create():
     print(request.form)
+    if not Book.validate_book(request.form):
+        return redirect('/new')
     Book.save(request.form)
     return redirect('/books')
 
@@ -41,6 +43,8 @@ def edit_book(id):
 @app.route('/update', methods=['post'])
 def update_book():
     print(request.form)
+    if not Book.validate_book(request.form):
+        return redirect(f"/books/edit/{request.form['id']}")
     Book.update(request.form)
     return redirect('/books')
 

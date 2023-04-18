@@ -1,4 +1,5 @@
 # import the function that will return an instance of a connection
+from flask_app import flash
 from flask_app.config.mysqlconnection import connectToMySQL
 from pprint import pprint
 
@@ -65,3 +66,23 @@ class Book:
         }
         return connectToMySQL(DATABASE).query_db(query, data)
         
+    @staticmethod
+    def validate_book(book:dict):
+        is_valid = True
+        if len(book['author']) < 3:
+            flash("author must be at least 3 chars")
+            is_valid = False
+        if len(book['title']) < 1:
+            flash("title must be present")
+            is_valid = False
+        if len(book['thoughts']) < 1:
+            flash("thoughts must be present")
+            is_valid = False
+        if book['date_read'] == '':
+            flash("please select a date")
+            is_valid = False
+        if 'finished' not in book:
+            flash("please select yes or no")
+            is_valid = False
+        
+        return is_valid

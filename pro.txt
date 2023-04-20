@@ -1,0 +1,9 @@
+Dan & Matt:
+project: cookbook 
+det: pulling random recipe from api, searchable, kitchen inventory, test kitchen.
+save versions of recipe. searchable 
+goals: meet for wireframe.
+
+Mike:
+project: imdb
+

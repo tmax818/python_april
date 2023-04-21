@@ -9,7 +9,14 @@
 </head>
 <body>
     <h1>Rick and Morty</h1>
-    {% for character in characters  %}
+    <form action="/search" method="post">
+      character: <input type="text", name="name">
+      <input type="submit" value="search">
+
+    </form>
+    {{res}}
+
+    {% for character in res  %}
         {{character}}
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="{{character.image}}" alt="Card image cap">

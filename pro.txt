@@ -2,8 +2,43 @@ Dan & Matt:
 project: cookbook 
 det: pulling random recipe from api, searchable, kitchen inventory, test kitchen.
 save versions of recipe. searchable 
-goals: meet for wireframe.
+goals1: meet for wireframe 
+goals: add ingredience to form and layout
+
 
 Mike:
-project: imdb
+project: imdb plot game
+goals: pull random title
+goals: more organization and requests for plots
+
+Maliq:
+project: automate pintrest scraper pinscrape
+goal: get the scraper to work
+
+Malo, Joan, Tillman: 
+project: ??? 
+goal: come up with project idea
+
+Zach:
+project: ???
+goal: come up with idea
+
+David:
+project: car rental app
+goal: find api 
+
+Ben:
+project: ???
+goal: finishing assignments
+
+Randy:
+project: ???
+goal: come up with idea
+
+Ethan:
+project: ???
+goal: come up with idea
+
+
+
 

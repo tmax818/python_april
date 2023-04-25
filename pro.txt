@@ -4,41 +4,49 @@ det: pulling random recipe from api, searchable, kitchen inventory, test kitchen
 save versions of recipe. searchable 
 goals1: meet for wireframe 
 goals: add ingredience to form and layout
-
+goals: update edit page / database
 
 Mike:
 project: imdb plot game
 goals: pull random title
 goals: more organization and requests for plots
+goals: answer keys, holding data other than session
 
 Maliq:
 project: automate pintrest scraper pinscrape
 goal: get the scraper to work
+goal: build site
 
 Malo, Joan, Tillman: 
-project: ??? 
+project: travel app
 goal: come up with project idea
+goal: wireframe sql
 
 Zach:
-project: ???
+project: clone pro football 
 goal: come up with idea
+goal: compare two players 
 
 David:
 project: car rental app
 goal: find api 
+goal: addjustments for database/ login reg
 
 Ben:
-project: ???
+project: social media aggrigator app / nfc 
 goal: finishing assignments
+goal: 
 
 Randy:
-project: ???
-goal: come up with idea
+project: music sharing / app
+goal: db
 
 Ethan:
-project: ???
+project: retail webside
 goal: come up with idea
 
-
+RJ:
+project: ??? music related
+goal: come up with idea
 
 

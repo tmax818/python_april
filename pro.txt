@@ -5,48 +5,68 @@ save versions of recipe. searchable
 goals1: meet for wireframe 
 goals: add ingredience to form and layout
 goals: update edit page / database
+goals: create method / api integration / build pages
+presenting: 
 
 Mike:
 project: imdb plot game
 goals: pull random title
 goals: more organization and requests for plots
 goals: answer keys, holding data other than session
+goals: complete functionality
+presenting: yes / maybe
 
 Maliq:
 project: automate pintrest scraper pinscrape
 goal: get the scraper to work
 goal: build site
+goal: good building site
+presenting: yes / maybe
 
 Malo, Joan, Tillman: 
 project: travel app
 goal: come up with project idea
 goal: wireframe sql
+goal: good, wireframe/ tillman api / sql ready
+presenting: yes / yes
 
 Zach:
 project: clone pro football 
 goal: come up with idea
-goal: compare two players 
+goal: compare two players
+goal: change api / behind
+presenting: yes / maybe 
 
 David:
 project: car rental app
 goal: find api 
 goal: addjustments for database/ login reg
+goal: on track/ bugs / routing
+presenting: yes / no
 
 Ben:
 project: social media aggrigator app / nfc 
 goal: finishing assignments
-goal: 
+goal: so far so good/ restruture db html/css good
+presenting: yes / maybe
 
 Randy:
 project: music sharing / app
 goal: db
+goal: finished layout functionality today api
+presenting: maybe / maybe 
+
 
 Ethan:
 project: retail webside
 goal: come up with idea
+goal: doing fine / behind sched
+presenting: maybe / no
 
 RJ:
-project: ??? music related
+project: music related 
 goal: come up with idea
-
+goal: how you doing? 
+goal: dump spotify / 
+presenting: maybe / 
 

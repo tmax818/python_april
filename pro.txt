@@ -7,7 +7,8 @@ goals: add ingredience to form and layout
 goals: update edit page / database
 goals: create method / api integration / build pages
 goals: adding routes / methods / save from show / api matt
-presenting: yes / maybe
+goals: 70 % complete
+presenting: yes / no
 
 Mike:
 project: imdb plot game
@@ -16,7 +17,8 @@ goals: more organization and requests for plots
 goals: answer keys, holding data other than session
 goals: complete functionality
 goals: functionality finished / flashyness / leaderboard
-presenting: yes / maybe
+goals: pretty good
+presenting: yes / yes
 
 Maliq:
 project: automate pintrest scraper pinscrape
@@ -24,7 +26,8 @@ goal: get the scraper to work
 goal: build site
 goal: good building site
 goal: new feature / makeing it look nice
-presenting: yes / maybe
+goal: done
+presenting: yes / yes
 
 Malo, Joan, Tillman: 
 project: travel app
@@ -32,7 +35,8 @@ goal: come up with project idea
 goal: wireframe sql
 goal: good, wireframe/ tillman api / sql ready
 goal: sign up / login / coding / learning django
-presenting: yes / yes
+goal: done
+presenting: yes / no
 
 Zach:
 project: clone pro football 
@@ -40,7 +44,8 @@ goal: come up with idea
 goal: compare two players
 goal: change api / behind
 goal: add functionality
-presenting: yes / maybe 
+goal: done
+presenting: yes / yes 
 
 David:
 project: car rental app
@@ -48,21 +53,23 @@ goal: find api
 goal: addjustments for database/ login reg
 goal: on track/ bugs / routing
 goal: too much styling / add to functionality
-presenting: yes / no
+goal: not as much as liked
+presenting: no / no
 
 Ben:
 project: social media aggrigator app / nfc 
 goal: finishing assignments
 goal: so far so good/ restruture db html/css good
 goal: alright / functionality 
-presenting: yes / maybe
+goal: mvp up
+presenting: yes / no
 
 Randy:
 project: music sharing / app
 goal: db
 goal: finished layout functionality today api
 goal: apis trouble / 
-presenting: maybe / maybe 
+presenting: yes / no 
 
 
 Ethan:
@@ -70,7 +77,8 @@ project: retail webside
 goal: come up with idea
 goal: doing fine / behind sched
 goal: functionality / api / 
-presenting: maybe / no
+goal: 60 
+presenting: yes / no
 
 RJ:
 project: music related 
@@ -78,9 +86,11 @@ goal: come up with idea
 goal: how you doing? 
 goal: dump spotify / 
 goal: use napster / button issues
-presenting: maybe / 
+goal: 90 %
+presenting: no / no 
 
 Carl: 
 project: outreach for military spouses
 goal: wireframe
-presenting: 
+goal: issues with images 
+presenting: yes / no
